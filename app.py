@@ -11,13 +11,15 @@ def home():
         <title>For Naveen 💖</title>
         <style>
             body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Segoe UI', sans-serif;
-                text-align: center;
-                background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
-                color: white;
-                overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+    color: white;
+    overflow-x: hidden;
+}
+               
             }
 
             .container {
@@ -161,4 +163,5 @@ def home():
 
 if __name__ == "__main__":
     app.run()
+
 
