@@ -17,7 +17,7 @@ def home():
                 text-align: center;
                 background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
                 color: white;
-                overflow: hidden;
+                overflow-x: hidden;
             }
 
             .container {
@@ -161,3 +161,4 @@ def home():
 
 if __name__ == "__main__":
     app.run()
+
