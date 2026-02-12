@@ -68,19 +68,26 @@ def home():
             .modal {
                 display: none;
                 position: fixed;
+                top: 0;
+                left: 0;
                 width: 100%;
                 height: 100%;
                 background: rgba(255,182,193,0.4);
                 backdrop-filter: blur(5px);
+                display: flex; 
+                align-items: center;
+                justify-content: center; 
             }
 
             .modal-content {
                 background: white;
                 color: #ff6fa5;
-                margin: 10% auto;
-                padding: 30px;
+                margin: 20px auto;
+                padding: 25px;
                 border-radius: 20px;
-                width: 70%;
+                width: 90%;
+                max-width: 500px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             }
 
             .close {
@@ -120,14 +127,9 @@ def home():
             </div>
         </div>
 
-        <audio id="music" loop>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-        </audio>
-
         <script>
             function sayYes() {
-                document.getElementById("hidden-message").style.display = "block";
-                document.getElementById("music").play();
+                document.getElementById("letterModal").style.display = "flex";
             }
 
             function moveButton() {
@@ -163,5 +165,6 @@ def home():
 
 if __name__ == "__main__":
     app.run()
+
 
 
