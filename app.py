@@ -9,21 +9,21 @@ def home():
     <html>
     <head>
         <title>For Naveen 💖</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
-    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
-    color: white;
-    overflow-x: hidden;
-}
-               
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', sans-serif;
+                text-align: center;
+                background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+                color: white;
+                overflow-x: hidden;
             }
 
             .container {
                 margin-top: 80px;
+                padding: 20px;
             }
 
             h1 {
@@ -74,15 +74,13 @@ def home():
                 height: 100%;
                 background: rgba(255,182,193,0.4);
                 backdrop-filter: blur(5px);
-                display: flex; 
                 align-items: center;
-                justify-content: center; 
+                justify-content: center;
             }
 
             .modal-content {
                 background: white;
                 color: #ff6fa5;
-                margin: 20px auto;
                 padding: 25px;
                 border-radius: 20px;
                 width: 90%;
@@ -95,6 +93,7 @@ def home():
                 font-size: 25px;
                 cursor: pointer;
             }
+
         </style>
     </head>
     <body>
@@ -129,7 +128,7 @@ def home():
 
         <script>
             function sayYes() {
-                document.getElementById("letterModal").style.display = "flex";
+                document.getElementById("hidden-message").style.display = "block";
             }
 
             function moveButton() {
@@ -140,7 +139,7 @@ def home():
             }
 
             function openLetter() {
-                document.getElementById("letterModal").style.display = "block";
+                document.getElementById("letterModal").style.display = "flex";
             }
 
             function closeLetter() {
@@ -165,6 +164,3 @@ def home():
 
 if __name__ == "__main__":
     app.run()
-
-
-
